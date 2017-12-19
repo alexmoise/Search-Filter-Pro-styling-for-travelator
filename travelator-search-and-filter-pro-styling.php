@@ -34,7 +34,8 @@ function travelator_sfpro_extra_styles() {
 	// Adding dynamic styles
 	$sfpro_extra_styles = $sfpro_fields_active_css . '
 		{
-		  background-color: yellow;
+		  background-color: #fbe9ee;
+		  font-weight: bold;
 		}
 	';
 	wp_add_inline_style( 'sfpro_extra_styles', $sfpro_extra_styles );
