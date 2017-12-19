@@ -1,2 +1,5 @@
 /* Plugin Name: Search and Filter Pro styling for Travelator */
 /* This is the static CSS file */
+.sf-input-select option {
+  background-color: white;
+}
