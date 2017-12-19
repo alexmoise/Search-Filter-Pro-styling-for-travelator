@@ -9,6 +9,7 @@
  * Author URI: https://moise.pro
  */
  
+ if ( ! defined( 'ABSPATH' ) ) {	exit(0);}
  
  
 ?>
