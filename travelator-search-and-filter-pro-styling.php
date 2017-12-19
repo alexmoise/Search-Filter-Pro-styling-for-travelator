@@ -9,7 +9,22 @@
  * Author URI: https://moise.pro
  */
  
- if ( ! defined( 'ABSPATH' ) ) {	exit(0);}
+ if ( ! defined( 'ABSPATH' ) ) { exit(0);}
  
+// Enqueue the styles
+add_action( 'wp_enqueue_scripts', 'travelator_sfpro_extra_styles', 99 );
+function travelator_sfpro_extra_styles() {
+ 
+ // Add CSS file
+ wp_enqueue_style( 'sfpro_extra_styles', plugins_url( 'sfpro_extra_static.css', __FILE__ ) );
+ 
+	// GET checkings here
+	
+	// Adding dynamic styles
+	$sfpro_extra_styles = "
+		.class {color:yellow;}
+	";
+	wp_add_inline_style( 'sfpro_extra_styles', $sfpro_extra_styles );
+}
  
 ?>
