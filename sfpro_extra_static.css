@@ -18,6 +18,7 @@
 }
 .searchandfilter label {
     width: calc((100% / 6) - 12px);
+	  display: inline-block !important;
 }
 .searchandfilter select.sf-input-select {
     width: 100%;
