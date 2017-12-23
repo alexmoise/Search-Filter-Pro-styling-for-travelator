@@ -4,7 +4,7 @@
 /* Styling taxonomy filters */
 .search-and-filter {
     background-color: white;
-    margin: 20px 0;
+    margin: 10px 0 20px 0;
 }
 .search-and-filter ul {
       margin: 0 0 0 12px;
@@ -40,6 +40,9 @@ div#content-box {
 @media (max-width: 959px) {
 	.searchandfilter label {
 		width: calc(100% - 20px);
+	}
+	.search-and-filter ul {
+      margin: 0;
 	}
 	.search-and-filter ul li > * {
 		margin: 8px 0 0 10px;
