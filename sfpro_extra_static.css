@@ -10,28 +10,45 @@
       margin: 0 0 0 12px;
 }
 .search-and-filter ul li {
-  display: inline !important;
-  margin: 0;
+	display: inline !important;
+	margin: 0;
 }
 .search-and-filter ul li > * {
     margin: 15px 0 15px 10px;
 }
+.search-and-filter .select2-selection {
+	border-radius: 0;
+	height: 39px;
+	border: 1px solid #ddd;
+}
+.search-and-filter .select2-selection__rendered {
+	margin: 4px;
+	color: #888 !important;
+	line-height: 29px !important;
+}
+.search-and-filter .select2-selection__arrow {
+  display: none;
+}
+.searchandfilter>ul>li label {
+	height: 39px;
+	vertical-align: top;
+}
 .searchandfilter label {
-    width: calc((100% / 6) - 12px);
-	  display: inline-block !important;
+	width: calc((100% / 6) - 12px);
+	display: inline-block !important;
 }
 .searchandfilter select.sf-input-select {
     width: 100%;
 	min-width: initial !important;
 }
 .searchandfilter .sf-input-select option {
-  background-color: white;
+	background-color: white;
 }
 .searchandfilter ul li input[type="submit"] {
     padding: 8px;
 }
 div#content-box {
-  padding-top: 5px !important;
+	padding-top: 5px !important;
 }
 #term {
     margin-left: 20px;
