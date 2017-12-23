@@ -1,5 +1,55 @@
 /* Plugin Name: Search and Filter Pro styling for Travelator */
 /* This is the static CSS file */
-.sf-input-select option {
+
+/* Styling taxonomy filters */
+.search-and-filter {
+    background-color: white;
+    margin: 20px 0;
+}
+.search-and-filter ul {
+      margin: 0 0 0 12px;
+}
+.search-and-filter ul li {
+  display: inline !important;
+  margin: 0;
+}
+.search-and-filter ul li > * {
+    margin: 15px 0 15px 10px;
+}
+.searchandfilter label {
+    width: calc((100% / 6) - 12px);
+}
+.searchandfilter select.sf-input-select {
+    width: 100%;
+	min-width: initial !important;
+}
+.searchandfilter .sf-input-select option {
   background-color: white;
 }
+.searchandfilter ul li input[type="submit"] {
+    padding: 8px;
+}
+div#content-box {
+  padding-top: 5px !important;
+}
+#term {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* ... and for mobiles .. */
+@media (max-width: 959px) {
+	.searchandfilter label {
+		width: calc(100% - 20px);
+	}
+	.search-and-filter ul li > * {
+		margin: 8px 0 0 10px;
+	}
+	.searchandfilter select.sf-input-select {
+		padding: 5px;
+	}
+	.searchandfilter ul li input[type="submit"] {
+		width: calc(100% - 20px);
+		margin-bottom: 10px;
+	}
+}
+/* Done styling tax filters */
