@@ -4,7 +4,7 @@
  * Plugin URI: https://gist.github.com/alexmoise/60c195e51c7fa05e9ca07c74b7c36542
  * GitHub Plugin URI: https://gist.github.com/alexmoise/60c195e51c7fa05e9ca07c74b7c36542
  * Description: A custom plugin to add some highlighting styles for active filters of the Search and Filter Pro Wordpress plugin used on Travelator.ro
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Alex Moise
  * Author URI: https://moise.pro
  */
@@ -12,7 +12,7 @@
  if ( ! defined( 'ABSPATH' ) ) { exit(0);}
  
 // Enqueue the styles
-add_action( 'wp_enqueue_scripts', 'travelator_sfpro_extra_styles', 99 );
+add_action( 'wp_enqueue_scripts', 'travelator_sfpro_extra_styles', 9999 );
 
 function travelator_sfpro_extra_styles() {
  
