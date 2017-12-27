@@ -1,36 +1,66 @@
 /* Plugin Name: Search and Filter Pro styling for Travelator */
 /* This is the static CSS file */
 
+/* EXPERIMENTALs !! Make the container fit the lists */
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+	display: block;
+	overflow: initial;
+}
+.searchandfilter>ul>li label {
+	height: auto;
+}
+
 /* Styling taxonomy filters */
 .search-and-filter {
     background-color: white;
     margin: 10px 0 20px 0;
 }
 .search-and-filter ul {
-      margin: 0 0 0 12px;
+	margin: 0 0 0 12px;
 }
 .search-and-filter > .searchandfilter > ul > li {
 	display: inline !important;
 	margin: 0;
 }
-.search-and-filter ul li > * {
+.searchandfilter > ul > li > label {
+	border: 1px solid #ddd !important;
+}
+.searchandfilter > ul > li > label > select {
+	border: 0px solid #ddd !important;
+}
+.searchandfilter > ul > li > label > .select2 .selection .select2-selection {
+	border: 0;
+}
+.searchandfilter > ul > li > label > .select2 {
+	width: 100% !important;
+}
+.searchandfilter > ul > li > label > .select2 .selection .select2-selection > ul > li.select2-search > input.select2-search__field {
+	border: 1px solid #ddd;
+	width: 100% !important;
+}
+.searchandfilter > ul > li > label > .select2 .selection .select2-selection>ul>li.select2-search:first-child>input.select2-search__field {
+	border: 0;
+}
+.searchandfilter .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	background-color: #fbe9ee !important;
+}
+.search-and-filter .searchandfilter > ul > li > * {
     margin: 15px 0 15px 10px;
 }
 .search-and-filter .select2-selection {
 	border-radius: 0;
-	height: 39px;
-	border: 1px solid #ddd;
+	height: 37px;
 }
 .search-and-filter .select2-selection__rendered {
 	margin: 4px;
 	color: #888 !important;
-	line-height: 29px !important;
+	/* line-height: 29px !important; */
 }
 .search-and-filter .select2-selection__arrow {
-  display: none;
+	display: none;
 }
 .searchandfilter>ul>li label {
-	height: 39px;
+	/* height: 39px; */
 	vertical-align: top;
 }
 .searchandfilter label {
@@ -47,6 +77,12 @@
 .searchandfilter ul li input[type="submit"] {
     padding: 8px;
 }
+/* combobox with select2 */
+.select2-selection li.select2-selection__choice {
+  height: 19px;
+  line-height: 19px;
+}
+/* end combo box with select2 */
 div#content-box {
 	padding-top: 5px !important;
 }
