@@ -30,16 +30,18 @@
 }
 .searchandfilter > ul > li > label > .select2 .selection .select2-selection {
 	border: 0;
+	display: table;
+	width: calc(100% - 10px) !important;
 }
 .searchandfilter > ul > li > label > .select2 {
 	width: 100% !important;
 }
 .searchandfilter > ul > li > label > .select2 .selection .select2-selection > ul > li.select2-search > input.select2-search__field {
-	border: 1px solid #ddd;
-	width: 100% !important;
+	/* border: 1px solid #ddd; */
+	/* width: 100% !important; */
 }
 .searchandfilter > ul > li > label > .select2 .selection .select2-selection>ul>li.select2-search:first-child>input.select2-search__field {
-	border: 0;
+	/* border: 0; */
 }
 .searchandfilter .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
 	background-color: #fbe9ee !important;
