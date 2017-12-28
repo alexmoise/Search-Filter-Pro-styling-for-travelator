@@ -39,9 +39,14 @@
 .searchandfilter > ul > li > label > .select2 .selection .select2-selection > ul > li.select2-search > input.select2-search__field {
 	/* border: 1px solid #ddd; */
 	/* width: 100% !important; */
+	position:absolute;
+	background: none !important
 }
 .searchandfilter > ul > li > label > .select2 .selection .select2-selection>ul>li.select2-search:first-child>input.select2-search__field {
 	/* border: 0; */
+}
+.searchandfilter .select2-selection__rendered li.select2-selection__choice:nth-last-of-type(2) {
+	margin-bottom: 5px !important;
 }
 .searchandfilter .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
 	background-color: #fbe9ee !important;
