@@ -1,15 +1,23 @@
 /* Plugin Name: Search and Filter Pro styling for Travelator */
 /* This is the static CSS file */
 
-/* EXPERIMENTALs !! Make the container fit the lists */
+/* EXPERIMENTALs !! */
+
+/* Hide the search box in drop-down lists for Select2 */
+.select2-dropdown .select2-search.select2-search--dropdown {
+    display: none;
+}
+/* Make the container fit the lists */
 .select2-container .select2-selection--multiple .select2-selection__rendered {
 	display: block;
 	overflow: initial;
 }
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 0 0 0 5px;
+}
 .searchandfilter>ul>li label {
 	height: auto;
 }
-
 /* Styling taxonomy filters */
 .search-and-filter {
     background-color: white;
@@ -37,13 +45,8 @@
 	width: 100% !important;
 }
 .searchandfilter > ul > li > label > .select2 .selection .select2-selection > ul > li.select2-search > input.select2-search__field {
-	/* border: 1px solid #ddd; */
-	/* width: 100% !important; */
 	position:absolute;
 	background: none !important
-}
-.searchandfilter > ul > li > label > .select2 .selection .select2-selection>ul>li.select2-search:first-child>input.select2-search__field {
-	/* border: 0; */
 }
 .searchandfilter .select2-selection__rendered li.select2-selection__choice:nth-last-of-type(2) {
 	margin-bottom: 5px !important;
@@ -61,17 +64,15 @@
 .search-and-filter .select2-selection__rendered {
 	margin: 4px;
 	color: #888 !important;
-	/* line-height: 29px !important; */
 }
 .search-and-filter .select2-selection__arrow {
 	display: none;
 }
 .searchandfilter>ul>li label {
-	/* height: 39px; */
 	vertical-align: top;
 }
 .searchandfilter label {
-	/* width: calc((100% / 6) - 12px); */
+	/* width: calc((100% / 6) - 12px); */ /* FARA buton de reset */
 	width: calc((100% / 7) - 8px); /* varianta CU buton de reset */
 	display: inline-block !important;
 }
@@ -106,9 +107,6 @@ div#content-box {
 	.search-and-filter ul {
 		margin: 0;
 		padding-top: 5px;
-	}
-	.search-and-filter ul li > * {
-		/* margin: 8px 0 0 10px; */
 	}
 	.search-and-filter .searchandfilter > ul > li> * {
 		margin: 5px 0px 5px 10px;
