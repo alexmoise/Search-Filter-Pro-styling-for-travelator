@@ -3,6 +3,72 @@
 
 /* EXPERIMENTALs !! */
 
+
+/* Featured Articles Lite 3 */
+div#last-posts-slider {
+  background: #ebebeb;
+  padding-top: 10px;
+}
+div#last-posts-slider .slider-wrapper {
+  height: 50vh !important;
+}
+.default .nivo-caption {
+  background: transparent;
+  top: 20vh;
+  width: 50%;
+  height: fit-content;
+  left: 50px;
+}
+.nivo-caption h2 {
+  line-height: 1.6em;
+}
+.default .nivo-caption h2 a {
+    color: rgb(42,61,75);
+    background-color: white;
+    border-bottom: none;
+    padding: 2px 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+	text-transform: initial;
+}
+.nivo-controlNav {
+  display: none;
+}
+.default .nivoSlider {
+  background: transparent !important;
+  margin-bottom: 0 !important;
+  height: 100%;
+}
+/* Header stuff styling */
+div#logo {
+  margin: 10px 0 0 50px !important;
+  width: 360px;
+}
+div#logo h1 {
+  padding: 0 !important;
+}
+div#tagline, div#logo {
+  display: inline-block;
+  vertical-align: bottom;
+}
+div#tagline {
+  margin: auto auto 10px 20px;
+  color: white;
+}
+div#header-holder-3 {
+  background-color: rgb(42,61,75);
+}
+div#head-search {
+  display: inline-block;
+  right: 50px;
+  top: calc(50% - 15px);
+  position: absolute;
+}
+div#head-search #form-head-search input[type="text"] {
+  border-radius: 10px;
+    padding: 5px;
+}
+
 /* Hide the search box in drop-down lists for Select2 */
 .select2-dropdown .select2-search.select2-search--dropdown {
     display: none;
