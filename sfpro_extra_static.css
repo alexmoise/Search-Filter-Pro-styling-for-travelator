@@ -4,6 +4,55 @@
 /* EXPERIMENTALs !! */
 
 
+
+/* 2 columns homepage layout */
+div.post-halves {
+  width: calc(50% - 37px);
+  display: inline-block;
+  margin-bottom: 10px !important;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+div.post-halves[post-position="left"] {
+  float: left;
+}
+div.post-halves[post-position="right"] {
+  float: right;
+}
+div.post-halves .st-format-standard-holder, div.post-halves .st-format-gallery-holder {
+  position: relative;
+}
+div.post-halves .st-format-standard-holder a, div.post-halves .st-format-gallery-holder a, div.post-halves .st-format-gallery-holder .st-gallery {
+  height: 206px;
+  overflow: hidden;
+}
+div.post-halves .st-gallery ol li.st-gallery-tab-current {
+  display: none;
+}
+div.post-halves h3.post-title {
+  font-size: 1em;
+  height: 55px;
+  margin-left: 10px !important;
+  text-align: left !important;
+}
+div.post-halves .meta {
+  font-size: 0.48em;
+  margin: 5px 0 0 80px !important;
+}
+div.post-halves .meta .ico16 {
+  margin-right: 10px;
+}
+div.post-halves .travelator-vezi-oferta {
+  text-align: center;
+  background-color: #96cd00;
+}
+div.post-halves .travelator-vezi-oferta a {
+	color: white;
+	display:inline-block;
+	width:100%;
+	height:100%;
+}
+
 /* Featured Articles Lite 3 */
 div#last-posts-slider {
   background: #ebebeb;
