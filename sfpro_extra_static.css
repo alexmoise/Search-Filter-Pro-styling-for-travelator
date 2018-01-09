@@ -5,6 +5,22 @@
 
 
 
+/* Full page width and sidebar adjustments */
+body.home.page #sidebar {
+  padding-top: 16px;
+}
+@media (min-width:1420px) {
+	#content-layout {
+	  width: 1400px;
+	}
+	#content-box {
+	  width: 1050px !important;
+	}
+	.searchandfilter label {
+	  min-width: calc((100% / 7) + 20px) !important;
+	}
+}
+
 /* 2 columns homepage layout */
 div.post-halves {
   width: calc(50% - 37px);
@@ -214,7 +230,7 @@ span.search-and-filter-title {
 }
 .searchandfilter label {
 	/* width: calc((100% / 6) - 12px); */ /* FARA buton de reset */
-	width: calc(100% / 7); /* varianta CU buton de reset */
+	min-width: calc((100% / 7) + 6px); /* varianta CU buton de reset */
 	display: inline-block !important;
 	padding: 1px 0;
 }
@@ -234,6 +250,8 @@ span.search-and-filter-title {
 	background-color: #ee6753;
 	color: white;
 	border: 0;
+	font-weight: normal;
+	font-size: 12px;
 }
 .searchandfilter ul li input.search-filter-reset {
   font-weight: normal;
