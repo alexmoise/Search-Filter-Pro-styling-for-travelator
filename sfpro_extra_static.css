@@ -6,7 +6,7 @@
 
 
 /* Full page width and sidebar adjustments */
-body.home.page #sidebar {
+body.home.page #sidebar, body.blog #sidebar, body.archive #sidebar, body.single #sidebar {
   padding-top: 16px;
 }
 @media (min-width:1420px) {
@@ -22,18 +22,20 @@ body.home.page #sidebar {
 }
 
 /* 2 columns homepage layout */
-div.post-halves {
-  width: calc(50% - 37px);
-  display: inline-block;
-  margin-bottom: 10px !important;
-  padding: 15px;
-  border: 1px solid #ddd;
-}
-div.post-halves[post-position="left"] {
-  float: left;
-}
-div.post-halves[post-position="right"] {
-  float: right;
+@media (min-width: 1320px) {
+	div.post-halves {
+	  width: calc(50% - 37px);
+	  display: inline-block;
+	  margin-bottom: 10px !important;
+	  padding: 15px;
+	  border: 1px solid #ddd;
+	}
+	div.post-halves[post-position="left"] {
+	  float: left;
+	}
+	div.post-halves[post-position="right"] {
+	  float: right;
+	}
 }
 div.post-halves .st-format-standard-holder, div.post-halves .st-format-gallery-holder {
   position: relative;
@@ -46,10 +48,12 @@ div.post-halves .st-gallery ol li.st-gallery-tab-current {
   display: none;
 }
 div.post-halves h3.post-title {
-  font-size: 1em;
-  height: 55px;
+  font-size: 1.2em !important;
+  height: 42px;
   margin-left: 10px !important;
   text-align: left !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 div.post-halves .meta {
   font-size: 0.48em;
@@ -68,6 +72,7 @@ div.post-halves .travelator-vezi-oferta a {
 	width:100%;
 	height:100%;
 }
+
 
 /* Featured Articles Lite 3 */
 div#last-posts-slider {
@@ -193,6 +198,7 @@ span.search-and-filter-title {
 }
 .searchandfilter > ul > li > label > .select2 {
 	width: 100% !important;
+	/* max-width: calc(100% / 7) !important; */
 }
 .searchandfilter > ul > li > label > .select2 .selection .select2-selection > ul > li.select2-search > input.select2-search__field {
 	position:absolute;
@@ -236,6 +242,7 @@ span.search-and-filter-title {
 }
 .searchandfilter li.sf-field-taxonomy-luna_an label {
   min-width: 138px;
+  max-width: calc((100% / 7) + 15px);
 }
 .searchandfilter select.sf-input-select {
     width: 100%;
@@ -245,13 +252,10 @@ span.search-and-filter-title {
 	background-color: white;
 }
 .searchandfilter ul li input[type="submit"] {
-	padding: 5px 8px;
-	border-radius: 8px;
-	background-color: #ee6753;
-	color: white;
-	border: 0;
-	font-weight: normal;
-	font-size: 12px;
+  padding: 4px 7px;
+  border-radius: 8px;
+  font-weight: normal;
+  font-size: 12px;
 }
 .searchandfilter ul li input.search-filter-reset {
   font-weight: normal;
@@ -289,6 +293,45 @@ div#content-box {
 	.searchandfilter ul li input[type="submit"] {
 		width: calc(100% - 20px);
 		margin-bottom: 10px;
+	}
+	.searchandfilter li h4 {
+		display: block;
+		position: relative;
+		margin-left: 12px !important;
+	}
+	.searchandfilter li.sf-field-taxonomy-luna_an label {
+		max-width: 100%;
+	}
+	.searchandfilter ul li input.search-filter-reset {
+		margin-left: 10px;
+	}
+	/* Hiding the filter */
+	.search-and-filter form ul {
+		display: none;
+	}
+	.search-and-filter:hover form ul {
+		display: block;
+	}
+	.search-and-filter:before {
+		content: '\25bc';
+		margin-left: 10px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.search-and-filter:hover:before {
+		content: '\25b2';
+		margin-left: 10px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.search-and-filter {
+		padding-top: 0px;
+	}
+	div.post-template {
+	  margin-bottom: 20px !important;
+	}
+	div.post-halves .st-format-standard-holder a {
+		  display: initial;
 	}
 }
 /* Done styling tax filters */
