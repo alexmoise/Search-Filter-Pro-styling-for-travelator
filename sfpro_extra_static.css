@@ -110,11 +110,43 @@ div#last-posts-slider .slider-wrapper {
 }
 
 /* Header stuff styling */
+#header-layout {
+  background-color: #2a3d4b;
+}
+div#header-holder-3 {
+  background-color: rgb(42,61,75);
+  position: relative;
+}
+@media (min-width: 1420px) {
+div#header-holder-3 {
+  width: 1400px;
+  margin: 0 auto;
+}
+}
+@media (min-width: 1320px) and (max-width: 1419px) {
+div#header-holder-3 {
+  width: 1200px;
+  margin: 0 auto;
+}
+}
+@media (min-width: 960px) and (max-width: 1319px) {
+div#header-holder-3 {
+  width: 935px;
+  margin: 0 auto;
+}
+}
+@media (min-width: 640px) and (max-width: 959px) {
+div#header-holder-3 {
+  width: 640px;
+  margin: 0 auto;
+}
+}
+/* Specific header elements .. */
 div#logo {
-  margin-top: 10px;
+  margin-top: 0px;
   margin-right: 0px;
-  margin-bottom: 0px !important;
-  margin-left: 50px;
+  margin-bottom: 5px !important;
+  margin-left: 0px;
   width: 360px;
 }
 div#logo h1 {
@@ -128,9 +160,6 @@ div#tagline {
   margin: auto auto 10px 20px;
   color: white;
 }
-div#header-holder-3 {
-  background-color: rgb(42,61,75);
-}
 div#head-search #form-head-search input[type="text"] {
 	border-radius: 10px;
     padding: 5px;
@@ -143,18 +172,30 @@ div#main-menu > div > ul > li {
   display: inline-block;
     border: 0;
 }
+div#main-menu {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-25%, -15px);
+}
+#main-menu .menu-new-primary-container {
+  line-height: normal;
+}
+#main-menu ul > li > a {
+  padding: 0px 10px !important;
+  color: white;
+}
+#main-menu ul > li.current-menu-item > a {
+  color: yellow;
+}
 div#main-menu > div > ul > li > a::before {
   display: none;
 }
 @media (min-width:960px) {
-	div#main-menu {
-		margin-top: 40px;
-		margin-left: 8vw;
-	}
 	div#head-search {
 		display: inline-block;
-		right: 50px;
-		bottom: calc(50% - 28px);
+		right: 0;
+		bottom: 20px;
 		position: absolute;
 	}
 	div#main-menu > div > ul > li > a {
@@ -169,26 +210,19 @@ div#main-menu > div > ul > li > a::before {
 		margin-left: 0px !important;
 		width: auto !important
 	}
-
-	div#main-menu {
-		position: relative;
-		left: 10px;
-		margin-top: 10px;
-	}
-	div#main-menu > div > ul > li > a {
-		padding: 0 10px;
-	}
 }
 @media (min-width:480px) AND (max-width:959px) {
 	div#head-search {
 		display: inline-block;
 		right: 10px;
-		bottom: 8px;
+		bottom: 10px;
 		position: absolute;
 	}
 	div#main-menu {
-		margin-top: 40px;
-		margin-left: 10px;
+		left: 0;
+		position: relative;
+		transform: initial;
+		margin: 10px 0;
 	}
 }
 /* And for even smaller screens ... */
@@ -206,9 +240,10 @@ div#main-menu > div > ul > li > a::before {
 		text-align: center;
 	}
 	div#main-menu {
-		margin-top: 5px;
-		margin-bottom: 5px;
-		left: 0px;
+		transform: none;
+		margin: 10px auto;
+		position: relative;
+		left: initial;
 	}
 }
 
