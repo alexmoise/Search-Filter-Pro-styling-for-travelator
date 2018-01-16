@@ -343,7 +343,7 @@ span.search-and-filter-title {
 }
 .searchandfilter label {
 	/* width: calc((100% / 6) - 12px); */ /* FARA buton de reset */
-	min-width: calc((100% / 7) + 6px); /* varianta CU buton de reset */
+	width: calc((100% / 7) + 6px); /* varianta CU buton de reset */
 	display: inline-block !important;
 	padding: 1px 0;
 }
