@@ -34,7 +34,7 @@ function travelator_sfpro_extra_styles() {
 	// Adding dynamic styles
 	$sfpro_extra_styles = $sfpro_fields_active_css . '
 		{
-		  background-color: #fad6d1;
+		  /* background-color: #fad6d1; */
 		  border-radius: 8px;
 		}
 	';
