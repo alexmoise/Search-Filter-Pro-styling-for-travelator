@@ -1,9 +1,6 @@
 /* Plugin Name: Search and Filter Pro styling for Travelator */
 /* This is the static CSS file */
 
-/* EXPERIMENTALs !! */
-
-
 
 /* Generals */
 .term-title h1 {
@@ -14,6 +11,12 @@ body.category .term-title h1:before {
 }
 #footer {
   background: #2a3d4b;
+}
+/* Hide the slider on small screens */
+@media (max-width:959px) {
+div#top-slider {
+  display: none !important;
+}
 }
 
 /* Full page width and sidebar adjustments */
