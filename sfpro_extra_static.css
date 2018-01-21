@@ -664,6 +664,9 @@ body.search-results #content-layout { background: white; }
   min-height: 206px;
   object-fit: cover;
 }
+.post-single .st-format-standard-holder img {
+  width: 100%;
+}
 @media (max-width:639px) {
 	.post-single div#article {
 		padding-left: 18px;
