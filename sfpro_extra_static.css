@@ -242,8 +242,8 @@ div#main-menu > div > ul > li > a::before {
 /* AND for mobile header ...  */
 @media (max-width:959px) {
 	#logo {
-		margin-left: 0px !important;
-		width: auto !important
+		margin-left: 0px;
+		width: 75% !important;
 	}
 }
 @media (min-width:480px) AND (max-width:959px) {
@@ -532,7 +532,7 @@ body.search-results #content-layout { background: white; }
 
 .offer-table th{
   background: #2a3d4b;
-  padding: 20px;
+  padding: 10px;
   font-size: 1.4em;
   font-weight: 600;
   color: #FFF;
@@ -548,24 +548,24 @@ body.search-results #content-layout { background: white; }
   text-align: center;
   padding: 10px 12px;
 }
-.offer-table .offer-price, .offer-table .offer-type {
+.offer-table .offer-type {
   font-size: 2.5em;
   line-height: 1em;
+  text-align: left;
 }
 .offer-table .offer-price {
+  font-size: 3em;
+  line-height: 1em;
   text-align: right;
-}
-.offer-table .offer-type {
-  text-align: left;
 }
 .offer-table td{
   text-transform: uppercase;
   color: #000;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
 }
 .offer-table .offer-locations td {
-  font-size: 16px;
+  font-size: 13px;
   padding-top: 25px;
   color: #808080;
 }
@@ -658,7 +658,8 @@ body.search-results #content-layout { background: white; }
 }
 .st-format-standard-holder .wp-post-image, 
 .st-format-gallery-holder .st-gallery img {
-	width: 100%;
+  min-height: 206px;
+  object-fit: cover;
 }
 @media (max-width:639px) {
 	.post-single div#article {
@@ -793,7 +794,10 @@ ul.offer-details-list {
 		width: calc(100% - 60px);
 		padding: 10px 15px;
 	}
-	.offer-time, .offer-from {
+	.offer-from {
+		font-size: 10px;
+	}
+	.offer-time {
 		font-size: 10px;
 	}
 }
