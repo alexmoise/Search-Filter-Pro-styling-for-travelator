@@ -667,6 +667,14 @@ body.search-results #content-layout { background: white; }
 .post-single .st-format-standard-holder img {
   width: 100%;
 }
+@media (min-width:640px) {
+.post-single:before {
+  left: 58px !important;
+}
+.post-single .meta, .post-single h1.post-title, .post-template h3.post-title, .post-template .meta {
+  margin-left: 127px !important;
+}
+}
 @media (max-width:639px) {
 	.post-single div#article {
 		padding-left: 18px;
@@ -679,6 +687,9 @@ body.search-results #content-layout { background: white; }
 	}
 	.single-post .st-ul li {
 		letter-spacing: 0;
+	}
+	.post-single:before {
+		left: 18px !important;
 	}
 }
 .offer-time, .offer-from {
