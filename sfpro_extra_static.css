@@ -1,7 +1,6 @@
 /* Plugin Name: Search and Filter Pro styling for Travelator */
 /* This is the static CSS file */
 
-
 /* Generals */
 .term-title h1 {
   font-size: 1.6em;
@@ -11,6 +10,9 @@ body.category .term-title h1:before {
 }
 #footer {
   background: #2a3d4b;
+}
+h6 {
+  text-transform: initial;
 }
 /* Hide the slider on small screens */
 @media (max-width:959px) {
@@ -111,7 +113,7 @@ div.sidebar .travelator-vezi-oferta a {
   color: black;
 }
 
-/* Featured Articles Lite 3 */
+/* Featured Articles Lite 3 */ /*
 div#last-posts-slider {
   background: #ebebeb;
   padding-top: 10px;
@@ -145,7 +147,7 @@ div#last-posts-slider .slider-wrapper {
   background: transparent !important;
   margin-bottom: 0 !important;
   height: 100%;
-}
+} */
 
 /* Header stuff styling */
 #header-layout {
@@ -179,13 +181,14 @@ div#header-holder-3 {
   margin: 0 auto;
 }
 }
+
 /* Specific header elements .. */
 div#logo {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 5px !important;
   margin-left: 0px;
-  width: 360px;
+  width: 290px;
 }
 div#logo h1 {
   padding: 0 !important;
@@ -198,10 +201,15 @@ div#tagline {
   margin: auto auto 10px 20px;
   color: white;
 }
+form#form-head-search {
+  width: 288px;
+}
 div#head-search #form-head-search input[type="text"] {
 	border-radius: 10px;
     padding: 5px;
+	width: 100%;
 }
+
 /* New, Small Nav Header Menu */
 div#main-menu, 
 div#main-menu > div, 
@@ -214,7 +222,7 @@ div#main-menu {
   position: absolute;
   bottom: 0px;
   left: 50%;
-  transform: translate(-25%, -15px);
+  transform: translate(-50%, -15px);
 }
 #main-menu .menu-new-primary-container {
   line-height: normal;
@@ -232,7 +240,7 @@ div#main-menu > div > ul > li > a::before {
 @media (min-width:960px) {
 	div#head-search {
 		display: inline-block;
-		right: 0;
+		right: 12px;
 		bottom: 20px;
 		position: absolute;
 	}
@@ -290,6 +298,7 @@ div#main-menu > div > ul > li > a::before {
 span.search-and-filter-title {
   margin: 10px 0 0 17px !important;
   font-weight: bold;
+  font-size: 12px;
 }
 .select2-dropdown .select2-search.select2-search--dropdown {
     display: none;
@@ -527,6 +536,7 @@ div#content-box {
 -------------------------------------------*/
 
 body.search-results #content-layout { background: white; }
+#menu-responsive a { color: #FFF }
 
 .offer-table{
   margin-top: 40px;
@@ -552,14 +562,18 @@ body.search-results #content-layout { background: white; }
   padding: 10px 12px;
 }
 .offer-table .offer-type {
-  font-size: 2.5em;
+  font-size: 20px;
   line-height: 1em;
   text-align: left;
+  padding-left: 18px;
+  padding-top: 8px;
 }
 .offer-table .offer-price {
   font-size: 3em;
   line-height: 1em;
   text-align: right;
+  padding-right: 18px;
+  padding-top: 14px;
 }
 .offer-table td{
   text-transform: uppercase;
@@ -615,14 +629,12 @@ body.search-results #content-layout { background: white; }
 #pre_next_post span {
   color: #96cd00;
 }
-
 .posts-related-details-wrapper > div h5 a:hover {
   color: #005480;
 }
 .posts-related-details-wrapper > div h5 a {
   color: #4291ce;
 }
-
 .single-post .st-ul {
 	border: 0;
 }
@@ -666,6 +678,9 @@ body.search-results #content-layout { background: white; }
 }
 .post-single .st-format-standard-holder img {
   width: 100%;
+}
+.social-icons-flst {
+  margin-top: 10px;
 }
 @media (min-width:640px) {
 .post-single:before {
@@ -825,7 +840,7 @@ ul.offer-details-list {
 a:hover { color:#005480; }
 
 /*-------------------------------------------
-    Momonda widget Custom styles
+    Momondo widget Custom styles
 -------------------------------------------*/
 
 .mmd-widget-madeby{
