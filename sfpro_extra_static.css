@@ -475,19 +475,13 @@ div#content-box {
 	}
 	.search-and-filter:hover form ul {
 		display: block;
-	}
+	}   */
 	.search-and-filter:before {
 		content: '\25bc';
 		margin-left: 10px;
 		font-size: 16px;
 		font-weight: bold;
 	}
-	.search-and-filter:hover:before {
-		content: '\25b2';
-		margin-left: 10px;
-		font-size: 16px;
-		font-weight: bold;
-	} */
 	.search-and-filter {
 		padding-top: 0px;
 	}
