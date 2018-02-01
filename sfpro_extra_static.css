@@ -113,42 +113,6 @@ div.sidebar .travelator-vezi-oferta a {
   color: black;
 }
 
-/* Featured Articles Lite 3 */ /*
-div#last-posts-slider {
-  background: #ebebeb;
-  padding-top: 10px;
-}
-div#last-posts-slider .slider-wrapper {
-  height: 50vh !important;
-}
-.default .nivo-caption {
-  background: transparent;
-  top: 20vh;
-  width: 50%;
-  height: fit-content;
-  left: 50px;
-}
-.nivo-caption h2 {
-  line-height: 1.6em;
-}
-.default .nivo-caption h2 a {
-    color: rgb(42,61,75);
-    background-color: white;
-    border-bottom: none;
-    padding: 2px 8px;
-    font-size: 1.2em;
-    font-weight: bold;
-	text-transform: initial;
-}
-.nivo-controlNav {
-  display: none;
-}
-.default .nivoSlider {
-  background: transparent !important;
-  margin-bottom: 0 !important;
-  height: 100%;
-} */
-
 /* Header stuff styling */
 #header-layout {
   background-color: #2a3d4b;
@@ -295,10 +259,12 @@ div#main-menu > div > ul > li > a::before {
 
 /* SEARCH AND FILTER PRO !! */
 /* Hide the search box in drop-down lists for Select2 */
-span.search-and-filter-title {
-  margin: 10px 0 0 17px !important;
+.search-and-filter-title {
+  margin: 0 15px 8px !important;
   font-weight: bold;
   font-size: 12px;
+  display: inline-block;
+  width: 90%;
 }
 .select2-dropdown .select2-search.select2-search--dropdown {
     display: none;
@@ -441,6 +407,13 @@ div#content-box {
 }
 /* ... and for mobiles .. */
 @media (max-width: 1319px) {
+	.search-and-filter-title {
+	  margin: 5px !important;
+	  font-weight: bold;
+	  font-size: 12px;
+	  display: inline-block;
+	  width: calc(100% - 45px);
+	}
 	.searchandfilter label {
 		width: calc(100% - 20px);
 	}
@@ -469,18 +442,11 @@ div#content-box {
 	.searchandfilter ul li input.search-filter-reset {
 		margin-left: 10px;
 	}
-	/* Hiding the filter 
-	.search-and-filter form ul {
-		display: none;
-	}
-	.search-and-filter:hover form ul {
-		display: block;
-	}   */
+	/* BEFORE filter title */
 	.search-and-filter:before {
-		content: '\25bc';
-		margin-left: 10px;
-		font-size: 16px;
-		font-weight: bold;
+		content: url(/4test/wp-content/plugins/60c195e51c7fa05e9ca07c74b7c36542-fee11cef8e394515f8cb85bb16f5ba891219d360/plus-icon.png);
+		vertical-align: -5px;
+		margin-left: 8px;
 	}
 	.search-and-filter {
 		padding-top: 0px;
@@ -488,44 +454,13 @@ div#content-box {
 	div.post-template {
 	  margin-bottom: 20px !important;
 	}
-	div.post-halves .st-format-standard-holder a {
-		  /* display: initial; */
-	}
 }
 /* Done styling tax filters */
 
-/* Some CHOSEN JS styling */
-.search-and-filter form {
-  z-index: 999;
-}
-.chosen-choices a.search-choice-close {
-  margin: 0 !important;
-}
-.chosen-choices .search-field input[type="text"] {
-  width: 100% !important;
-  padding: 4px !important;
-  margin-bottom: 5px !important;
-}
-.chosen-container-active .chosen-choices li.search-field input[type=text] {
-  border: 1px solid #DDD !important;
-}
-.chosen-container-multi .chosen-choices li.search-field input[type=text] {
-  border: 1px solid #DDD !important;
-}
-.chosen-choices li.search-field {
-  /* margin-bottom: 4px !important; */
-  padding: 4px 0 0 0 !important;
-  background: none !important;
-}
-.chosen-drop li {
-  width: 100% !important;
-  display: block !important;
-}
 
-
- /* ==== SQUIRREL AHEAD!! ==== */ 
+/* ==== SQUIRREL AHEAD!! ==== */ 
  
- /*-------------------------------------------
+/*-------------------------------------------
     Custom styles
 -------------------------------------------*/
 

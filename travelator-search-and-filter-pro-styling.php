@@ -4,7 +4,7 @@
  * Plugin URI: https://gist.github.com/alexmoise/60c195e51c7fa05e9ca07c74b7c36542
  * GitHub Plugin URI: https://gist.github.com/alexmoise/60c195e51c7fa05e9ca07c74b7c36542
  * Description: A custom plugin to add some highlighting styles for active filters of the Search and Filter Pro Wordpress plugin used on Travelator.ro. Later on added *a lot* other CSS, see the static CSS file for details.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Alex Moise
  * Author URI: https://moise.pro
  */
@@ -47,9 +47,12 @@ function travelator_sfpro_filter_hide_js() {
 	if( wp_is_mobile() ) {
 		echo "
 			<script>
+				jQuery(document).ready(function(){
+					jQuery('.searchandfilter').hide();
+				});
 				jQuery(function () {
 					jQuery('.search-and-filter-title').on('click', function () {
-						jQuery('.searchandfilter').slideToggle();
+						jQuery('.searchandfilter').slideToggle(200);
 					});
 				});
 			</script>
