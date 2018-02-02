@@ -457,7 +457,7 @@ div#content-box {
 	}
 	/* BEFORE filter title */
 	.search-and-filter:before {
-		content: url(/4test/wp-content/plugins/60c195e51c7fa05e9ca07c74b7c36542-fee11cef8e394515f8cb85bb16f5ba891219d360/plus-icon.png);
+		content: url(/4test/wp-content/plugins/search-filter-pro-styling-for-travelator/plus-icon.png);
 		vertical-align: -5px;
 		margin-left: 8px;
 	}
