@@ -497,7 +497,7 @@ body.search-results #content-layout { background: white; }
   vertical-align: middle;
 }
 .offer-table th, .offer-table tr, .offer-table td{
-  border: none;
+  border: none !important;
 }
 .offer-table td{
   text-align: center;
@@ -527,6 +527,7 @@ body.search-results #content-layout { background: white; }
   font-size: 13px;
   padding-top: 25px;
   color: #808080;
+  padding-top: 10px !important;
 }
 .offer-table td .separator {
 	display: block;
@@ -706,23 +707,21 @@ ul.offer-details-list {
   font-size: 22px;
   vertical-align: middle;
 }
- /* Tabel preturi alternative */
-.table.alt-offers {
+ /* ====== Tabel preturi alternative ====== */
+ /* TABLE table */
+ .tab-alt-offers  {
   margin: 25px !important;
   width: calc(100% - 50px);
   display: table;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-collapse: separate;
 }
-.table.alt-offers .alt-offers-caption {
+.tab-alt-offers-caption {
   background-color: #ddd;
   color: #2a3d4b !important;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 8px;
+  font-size: 15px !important;
 }
-.table.alt-offers .tr .td {
+.tab-alt-offers tr td {
   text-transform: initial;
   color: #2a3d4b;
   font-size: 13px;
@@ -730,51 +729,27 @@ ul.offer-details-list {
   padding: 10px !important;
   border-bottom: 1px solid #ccc;
 }
-.table.alt-offers .tr {
-  display: table-row;
-  width: auto;
-  clear: both;
+/* Special pentru ecrane mari ..  */
+@media (min-width:768px) {
+	.tab-alt-offers-2cols tr td {
+		  width: 50% !important;
+	}
+	.tab-alt-offers-3cols tr td {
+		  width: 33.33% !important;
+	}
 }
-.table.alt-offers .td {
-  display: table-column;   
-  width: calc(33.33% - 20px);        
-  float: left;  /* fix for  buggy browsers */
-}
-.table.alt-offers .td.coldpan-3 {
-    width: calc(100% - 20px);
-	text-transform: uppercase;
-}
-/* ... si versiunea cu 2 coloane ... */
-.table.alt-offers .td.coldpan-2 {
-    width: calc(100% - 20px);
-    text-transform: uppercase;
-}
-.table.alt-offers-2cols .td {
-    width: calc(50% - 20px);
-}
-/* Si mobile .. */
+/* .. si mici .. */
 @media (max-width:767px) {
-	.table.alt-offers .td {
-		width: calc(100% - 20px);
-		padding: 5px 10px !important;
-	}
+    .tab-alt-offers tr td:not(.tab-alt-offers-caption) {
+    display: block;
+    width: 100%;
+    padding: 0px !important;
+  }
+    .tab-alt-offers tr td:not(.tab-alt-offers-caption) p {
+    margin: 15px 0 !important;
+  }
 }
-@media (max-width:479px) {
-	.table.alt-offers {
-		margin: 15px !important;
-		width: calc(100% - 30px);
-	}
-	.offer-bottom-btns .button-st {
-		width: calc(100% - 60px);
-		padding: 10px 15px;
-	}
-	.offer-from {
-		font-size: 10px;
-	}
-	.offer-time {
-		font-size: 10px;
-	}
-}
+
 /*-------------------------------------------
     ALL THE LINKS :-)
 -------------------------------------------*/
