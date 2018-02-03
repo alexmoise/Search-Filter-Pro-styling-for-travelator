@@ -457,7 +457,7 @@ div#content-box {
 	}
 	/* BEFORE filter title */
 	.search-and-filter:before {
-		content: url(/4test/wp-content/plugins/search-filter-pro-styling-for-travelator-master/plus-icon.png);
+		content: url(/wp-content/plugins/search-filter-pro-styling-for-travelator-master/plus-icon.png);
 		vertical-align: -5px;
 		margin-left: 8px;
 	}
@@ -632,6 +632,7 @@ body.search-results #content-layout { background: white; }
 .post-single .meta, .post-single h1.post-title, .post-template h3.post-title, .post-template .meta {
   margin-left: 127px !important;
 }
+.posts-related-wrapper .meta {margin-left: 0px !important;}
 }
 @media (max-width:639px) {
 	.post-single div#article {
