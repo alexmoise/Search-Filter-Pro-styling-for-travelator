@@ -592,10 +592,11 @@ body.search-results #content-layout { background: white; }
 .single-post .tabs-1cols .st-ul li {
     width: 100%
 }
-.single-post .st-ul li:first-of-type,
+.single-post .st-ul li:first-of-type {
+    border-right: 0 !important;
+}
 .single-post .st-ul li:last-of-type {
     border-left: 0 !important;
-    border-right: 0 !important;
 }
 .single-post .st-ul li.st-current {
   background-color: rgb(238,103,83);
